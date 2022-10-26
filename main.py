@@ -6,6 +6,8 @@ import gl
 import Creando
 from vector import *
 
+gl.EscrituraSobreTextura()
+
 gl.glInit()
 #Se crea la Ventana (Que renderiza a.bmp)
 gl.glCreateWindow(1024,1024)
