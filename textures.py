@@ -24,9 +24,18 @@ class Texture:
             for y in range(self.height):
                 self.pixels.append([])
                 for x in range(self.width):
-                    b = ord(image.read(1))
-                    g = ord(image.read(1))
-                    r = ord(image.read(1))
+                    try:
+                        b = ord(image.read(1))
+                    except:
+                        pass
+                    try:
+                        g = ord(image.read(1))
+                    except:
+                        pass
+                    try:
+                        r = ord(image.read(1))
+                    except:
+                        pass
                     self.pixels[y].append(color(r,g,b))
 
 

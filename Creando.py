@@ -54,14 +54,32 @@ def cargando_modelo():
     # translate_factor = (525, 50,0)
     # cube = Obj('./faraon.obj')
 
-    # Mascara
-    scale_factor = (3000,3000,3000)
-    translate_factor = (7150,50,0)
-    cube = Obj('./Objts/Mask.obj')
-    renderizado.texture = Texture('./Textrs/Mask3.bmp')
+    # # Mascara
+    # scale_factor = (3000,3000,3000)
+    # translate_factor = (7150,50,0)
+    # cube = Obj('./Objts/Mask.obj')
+    # renderizado.texture = Texture('./Textrs/Mask3.bmp')
 
+    # # Caballo
+    # scale_factor = (0.5,0.5,1)
+    # translate_factor = (500,600,0)
+    # cube = Obj('./Textrs/juan.obj')
+    # renderizado.texture = Texture('./Textrs/juan.bmp')
+    # gl.EscrituraSobreTextura('./Textrs/madara.obj','./Textrs/madara.bmp')
 
+    # # Pato
+    # scale_factor = (15,15,30)
+    # translate_factor = (500,400,0)
+    # cube = Obj('./Objts/Pato.obj')
+    # renderizado.texture = Texture('./Textrs/Pato.bmp')
+    # gl.EscrituraSobreTextura('./Objts/Pato.obj','./Textrs/Pato.bmp')
 
+    # Gato
+    scale_factor = (15,15,10)
+    translate_factor = (500,400,0)
+    cube = Obj('./Objts/Gato.obj')
+    renderizado.texture = Texture('./Textrs/Gato.bmp')
+    gl.EscrituraSobreTextura('./Objts/Gato.obj','./Textrs/Gato.bmp')
 
     for face in cube.faces:
         f1 = face[0][0] - 1

@@ -7,9 +7,9 @@ import random
 import extras as ex
 from textures import *
 from Object import *
-def EscrituraSobreTextura():
+def EscrituraSobreTextura(a,b):
         # """
-    t = Texture('./Textrs/Mask3.bmp')
+    t = Texture(b)
     r = Render.Render(t.width,t.height)
 
     r.framebuffer = t.pixels
@@ -18,7 +18,7 @@ def EscrituraSobreTextura():
     # scale_factor = (500,500,600)
     # translate_factor = (525, 500,0)
 
-    cube = Obj('./Objts/Mask.obj')
+    cube = Obj(a)
 
     # r.color_actual=color(255,255,255)
 
@@ -62,11 +62,13 @@ def EscrituraSobreTextura():
             # r.line(vt1.x,vt1.y,vt2.x,vt2.y)
             # r.line(vt2.x,vt2.y,vt3.x,vt3.y)
             # r.line(vt3.x,vt3.y,vt1.x,vt1.y)
-            r.line(vt1,vt2)
-            r.line(vt2,vt3)
-            r.line(vt3,vt4)
-            r.line(vt4,vt1)
-
+            try:
+                r.line(vt1,vt2)
+                r.line(vt2,vt3)
+                r.line(vt3,vt4)
+                r.line(vt4,vt1)
+            except:
+                pass
             # try:
             #     r.line(vt1,vt2)
             #     r.line(vt2,vt3)
